@@ -7,6 +7,8 @@ namespace RoyTheunissen.SceneViewDebugModes
     [CreateAssetMenu(fileName = "CustomDebugDrawModesConfig.asset", menuName = "Scriptable Objects/Custom Debug Draw Modes Config")]
     public sealed class CustomDebugDrawModesConfig : ScriptableObject
     {
+        public const string CustomDebugDrawModesConfigGuid = "5e0423f24c2bb4b4c94fdca22274330e";
+        
         [SerializeField] private List<CustomDebugDrawMode> debugDrawModes;
 
         [SerializeField, HideInInspector] private CustomDebugDrawMode.Categories activeCategories = (CustomDebugDrawMode.Categories)~0;
@@ -24,8 +26,7 @@ namespace RoyTheunissen.SceneViewDebugModes
             {
                 if (cachedInstance == null)
                 {
-                    const string customDebugDrawModesConfigGuid = "5e0423f24c2bb4b4c94fdca22274330e";
-                    string path = AssetDatabase.GUIDToAssetPath(customDebugDrawModesConfigGuid);
+                    string path = AssetDatabase.GUIDToAssetPath(CustomDebugDrawModesConfigGuid);
                     cachedInstance = AssetDatabase.LoadAssetAtPath<CustomDebugDrawModesConfig>(path);
                 }
 

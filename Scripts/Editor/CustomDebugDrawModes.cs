@@ -1,4 +1,5 @@
 using UnityEditor;
+using UnityEngine;
 
 namespace RoyTheunissen.SceneViewDebugModes
 {
@@ -12,6 +13,16 @@ namespace RoyTheunissen.SceneViewDebugModes
         {
             EditorApplication.update += OnUpdateEditor;
 
+            if (CustomDebugDrawModesConfig.Instance == null)
+            {
+                Debug.LogError($"Custom Debug Draw Modes Config could not be found. Debug draw modes will not " +
+                                 $"work. If this is your first time installing it, it may not have loaded correctly " +
+                                 $"in which case it should work after a restart. If it continues to persist, check " +
+                                 $"that a {nameof(CustomDebugDrawModesConfig)} exists with GUID " +
+                                 $"{CustomDebugDrawModesConfig.CustomDebugDrawModesConfigGuid}.");
+                return;
+            }
+            
             CustomDebugDrawModesConfig.Instance.RegisterDebugDrawModes();
         }
 
@@ -42,6 +53,9 @@ namespace RoyTheunissen.SceneViewDebugModes
 
         private static void OnDrawModeChanged(SceneView.CameraMode mode)
         {
+            if (CustomDebugDrawModesConfig.Instance == null)
+                return;
+            
             CustomDebugDrawMode customDebugDrawMode = CustomDebugDrawModesConfig.Instance.GetDebugDrawMode(mode);
             
             if (lastActiveDebugDrawMode != null)
