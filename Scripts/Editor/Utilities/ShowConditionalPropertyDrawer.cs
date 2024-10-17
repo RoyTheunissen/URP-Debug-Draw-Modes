@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 using UnityEditor;
 using UnityEngine;
 
-namespace RoyTheunissen.SceneViewDebugModes.Utilities
+namespace RoyTheunissen.URPBufferDebugging.Utilities
 {
     /// <summary>
     /// Makes sure a field is only shown if a certain condition is met.

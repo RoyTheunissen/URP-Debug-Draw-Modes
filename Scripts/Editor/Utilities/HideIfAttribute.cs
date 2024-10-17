@@ -1,4 +1,4 @@
-namespace RoyTheunissen.SceneViewDebugModes.Utilities
+namespace RoyTheunissen.URPBufferDebugging.Utilities
 {
     /// <summary>
     /// Hides a field in the inspector if a certain field has a certain value.

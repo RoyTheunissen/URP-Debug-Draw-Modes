@@ -4,7 +4,7 @@ using UnityEngine.Rendering.RenderGraphModule;
 using UnityEngine.Rendering.RenderGraphModule.Util;
 using UnityEngine.Rendering.Universal;
 
-namespace RoyTheunissen.SceneViewDebugModes
+namespace RoyTheunissen.URPBufferDebugging
 {
     public abstract class DebugDrawModeRenderPass : ScriptableRenderPass
     {

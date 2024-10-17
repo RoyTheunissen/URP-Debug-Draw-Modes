@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-namespace RoyTheunissen.SceneViewDebugModes
+namespace RoyTheunissen.URPBufferDebugging
 {
     [InitializeOnLoad]
     public static class CustomDebugDrawModes

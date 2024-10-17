@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Rendering.RenderGraphModule;
 using UnityEngine.Rendering.Universal;
 
-namespace RoyTheunissen.SceneViewDebugModes
+namespace RoyTheunissen.URPBufferDebugging
 {
     public sealed class ShowGbufferRenderPass : DebugDrawModeRenderPass
     {

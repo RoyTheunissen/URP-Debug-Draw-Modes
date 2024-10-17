@@ -1,6 +1,6 @@
 using UnityEditor;
 
-namespace RoyTheunissen.SceneViewDebugModes
+namespace RoyTheunissen.URPBufferDebugging
 {
     [CustomEditor(typeof(CustomDebugDrawModesConfig))]
     public class CustomDebugDrawModesConfigEditor : Editor

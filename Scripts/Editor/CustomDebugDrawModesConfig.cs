@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace RoyTheunissen.SceneViewDebugModes
+namespace RoyTheunissen.URPBufferDebugging
 {
     [CreateAssetMenu(fileName = "CustomDebugDrawModesConfig.asset", menuName = "Scriptable Objects/Custom Debug Draw Modes Config")]
     public sealed class CustomDebugDrawModesConfig : ScriptableObject
