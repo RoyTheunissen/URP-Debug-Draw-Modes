@@ -11,9 +11,6 @@ namespace RoyTheunissen.URPBufferDebugging
         
         [SerializeField] private List<CustomDebugDrawMode> debugDrawModes;
 
-        [SerializeField, HideInInspector] private CustomDebugDrawMode.Categories activeCategories = (CustomDebugDrawMode.Categories)~0;
-        public CustomDebugDrawMode.Categories ActiveCategories => activeCategories;
-
         private static CustomDebugDrawModesConfig cachedInstance;
 
         /// <summary>
@@ -47,10 +44,17 @@ namespace RoyTheunissen.URPBufferDebugging
 
         public void RegisterDebugDrawModes()
         {
+            // NOTE: I guess this would break user-defined camera modes that are defined elsewhere, but there's no way
+            // to check if a camera mode is already registered. The functionality seems quite limited ;(
+            SceneView.ClearUserDefinedCameraModes();
+
             for (int i = 0; i < debugDrawModes.Count; i++)
             {
-                if ((activeCategories & debugDrawModes[i].Category) == debugDrawModes[i].Category)
+                if ((UrpBufferDebuggingSettings.ActiveCategories & debugDrawModes[i].Category) ==
+                    debugDrawModes[i].Category)
+                {
                     SceneView.AddCameraMode(debugDrawModes[i].Name, debugDrawModes[i].Section);
+                }
             }
         }
     }
