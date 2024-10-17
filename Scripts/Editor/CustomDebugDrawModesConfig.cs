@@ -24,8 +24,9 @@ namespace RoyTheunissen.SceneViewDebugModes
             {
                 if (cachedInstance == null)
                 {
-                    cachedInstance = AssetDatabase.LoadAssetAtPath<CustomDebugDrawModesConfig>(
-                            "Assets/URP-Buffer-Debugging/Configs/Editor/CustomDebugDrawModesConfig.asset");
+                    const string customDebugDrawModesConfigGuid = "5e0423f24c2bb4b4c94fdca22274330e";
+                    string path = AssetDatabase.GUIDToAssetPath(customDebugDrawModesConfigGuid);
+                    cachedInstance = AssetDatabase.LoadAssetAtPath<CustomDebugDrawModesConfig>(path);
                 }
 
                 return cachedInstance;
