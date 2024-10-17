@@ -1,0 +1,240 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9792e21f394c2eb0e8e4d73f087255, type: 3}
+  m_Name: CustomDebugDrawModesConfig
+  m_EditorClassIdentifier: 
+  debugDrawModes:
+  - name: 0.RGB (Albedo)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 0
+      channels: 4
+  - name: 0.R (Albedo R)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 0
+      channels: 0
+  - name: 0.G (Albedo G)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 0
+      channels: 1
+  - name: 0.B (Albedo B)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 0
+      channels: 2
+  - name: 0.A (Material Flags)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 0
+      channels: 3
+  - name: 1.RGB (Metallic/Specular)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 1
+      channels: 4
+  - name: 1.R (Metallic/Specular.R)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 1
+      channels: 0
+  - name: 1.G (Specular.G)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 1
+      channels: 1
+  - name: 1.B (Specular.B)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 1
+      channels: 2
+  - name: 1.A (Occlusion)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 1
+      channels: 3
+  - name: 2.RGB (Encoded Normal)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 2
+      channels: 4
+  - name: 2.R (Encoded Normal X)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 2
+      channels: 0
+  - name: 2.G (Encoded Normal Y)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 2
+      channels: 1
+  - name: 2.B (Encoded Normal Z)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 2
+      channels: 2
+  - name: 2.A (Smoothness)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 2
+      channels: 3
+  - name: 3.RGB (Lighting Buffer)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 3
+      channels: 4
+  - name: 3.R (GI.R)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 3
+      channels: 0
+  - name: 3.G (GI.G)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 3
+      channels: 1
+  - name: 3.B (GI.B)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 3
+      channels: 2
+  - name: 3.A (unused)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 3
+      channels: 3
+  - name: 4.R (Optional #1)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 4
+      channels: 0
+  - name: 5.R (Optional #2)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 5
+      channels: 0
+  - name: 6.R (Optional #3)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 6
+      channels: 0
+  - name: Albedo
+    category: 2
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 0
+      channels: 4
+  - name: Normals
+    category: 2
+    type: 3
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 2
+      channels: 4
+  - name: Smoothness
+    category: 2
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 2
+      channels: 3
+  - name: Metallic
+    category: 2
+    type: 5
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 1
+      channels: 0
+  - name: Depth
+    category: 2
+    type: 4
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 1
+      channels: 0
+  activeCategories: -1

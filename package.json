@@ -1,0 +1,29 @@
+{
+    "name": "com.roytheunissen.urp-buffer-debugging",
+    "displayName": "URP Buffer Debugging",
+    "version": "0.1.0",
+    "unity": "6000.0",
+    "description": "Lets you see gbuffer buffer contents in the scene view like you can in BRP.",
+    "keywords": [
+        "urp",
+        "buffer",
+        "gbuffer",
+        "depth buffer",
+        "graphics",
+        "deferred",
+        "debugging",
+        "debug draw mode",
+        "debug draw modes"
+    ],
+    "author": {
+        "name": "Roy Theunissen",
+        "url": "https://www.roytheunissen.com"
+    },
+    "category": "editor extensions",
+    "homepage": "https://github.com/RoyTheunissen/URP-Buffer-Debugging",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/RoyTheunissen/URP-Buffer-Debugging"
+    },
+    "bugs": "https://github.com/RoyTheunissen/URP-Buffer-Debugging/issues"
+}
