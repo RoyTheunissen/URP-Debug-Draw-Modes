@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace RoyTheunissen.URPBufferDebugging.Utilities
+namespace RoyTheunissen.URPDebugDrawModes.Utilities
 {
     /// <summary>
     /// Attribute that causes a field's visibility to depend on the value of another field.

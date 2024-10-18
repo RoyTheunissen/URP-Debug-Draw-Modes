@@ -1,29 +1,29 @@
 {
-    "name": "com.roytheunissen.urp-buffer-debugging",
-    "displayName": "URP Buffer Debugging",
+    "name": "com.roytheunissen.urp-debug-draw-modes",
+    "displayName": "URP Debug Draw Modes",
     "version": "0.1.0",
     "unity": "6000.0",
-    "description": "Lets you see gbuffer buffer contents in the scene view like you can in BRP.",
+    "description": "Adds debug draw modes to let you see gbuffer contents in the scene view like you can in BRP.",
     "keywords": [
         "urp",
+        "debug draw mode",
+        "debug draw modes",
         "buffer",
         "gbuffer",
         "depth buffer",
         "graphics",
         "deferred",
-        "debugging",
-        "debug draw mode",
-        "debug draw modes"
+        "debugging"
     ],
     "author": {
         "name": "Roy Theunissen",
         "url": "https://www.roytheunissen.com"
     },
     "category": "editor extensions",
-    "homepage": "https://github.com/RoyTheunissen/URP-Buffer-Debugging",
+    "homepage": "https://github.com/RoyTheunissen/URP-Debug-Draw-Modes",
     "repository": {
         "type": "git",
-        "url": "https://github.com/RoyTheunissen/URP-Buffer-Debugging"
+        "url": "https://github.com/RoyTheunissen/URP-Debug-Draw-Modes"
     },
-    "bugs": "https://github.com/RoyTheunissen/URP-Buffer-Debugging/issues"
+    "bugs": "https://github.com/RoyTheunissen/URP-Debug-Draw-Modes/issues"
 }

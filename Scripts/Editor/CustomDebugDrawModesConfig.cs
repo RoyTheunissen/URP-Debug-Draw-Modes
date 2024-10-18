@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace RoyTheunissen.URPBufferDebugging
+namespace RoyTheunissen.URPDebugDrawModes
 {
     [CreateAssetMenu(fileName = "CustomDebugDrawModesConfig.asset", menuName = "Scriptable Objects/Custom Debug Draw Modes Config")]
     public sealed class CustomDebugDrawModesConfig : ScriptableObject
@@ -50,7 +50,7 @@ namespace RoyTheunissen.URPBufferDebugging
 
             for (int i = 0; i < debugDrawModes.Count; i++)
             {
-                if ((UrpBufferDebuggingSettings.ActiveCategories & debugDrawModes[i].Category) ==
+                if ((UrpDebugDrawModesSettings.ActiveCategories & debugDrawModes[i].Category) ==
                     debugDrawModes[i].Category)
                 {
                     SceneView.AddCameraMode(debugDrawModes[i].Name, debugDrawModes[i].Section);

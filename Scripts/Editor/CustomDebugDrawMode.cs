@@ -1,11 +1,11 @@
 using System;
-using RoyTheunissen.URPBufferDebugging.Utilities;
+using RoyTheunissen.URPDebugDrawModes.Utilities;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-namespace RoyTheunissen.URPBufferDebugging
+namespace RoyTheunissen.URPDebugDrawModes
 {
     [Serializable]
     public sealed class CustomDebugDrawMode

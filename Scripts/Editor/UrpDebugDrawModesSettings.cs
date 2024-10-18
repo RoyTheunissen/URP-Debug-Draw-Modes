@@ -2,11 +2,11 @@ using System.Collections.Generic;
 using UnityEditor;
 using SettingsProvider = UnityEditor.SettingsProvider;
 
-namespace RoyTheunissen.URPBufferDebugging
+namespace RoyTheunissen.URPDebugDrawModes
 {
-    public static class UrpBufferDebuggingSettings
+    public static class UrpDebugDrawModesSettings
     {
-        private const string ActiveCategoriesEditorPref = "RoyTheunissen/URPBufferDebugging/ActiveCategories";
+        private const string ActiveCategoriesEditorPref = "RoyTheunissen/URPDebugDrawModes/ActiveCategories";
         public static CustomDebugDrawMode.Categories ActiveCategories
         {
             get
@@ -25,11 +25,11 @@ namespace RoyTheunissen.URPBufferDebugging
         }
 
         [SettingsProvider]
-        public static SettingsProvider UrpBufferDebuggingSettingsProvider()
+        public static SettingsProvider UrpDebugDrawModesSettingsProvider()
         {
-            SettingsProvider provider = new SettingsProvider("Project/UrpBufferDebuggingSettings", SettingsScope.User)
+            SettingsProvider provider = new SettingsProvider("Project/UrpDebugDrawModesSettings", SettingsScope.User)
             {
-                label = "URP Buffer Debugging",
+                label = "URP Debug Draw Modes",
                 
                 guiHandler = (searchContext) =>
                 {
@@ -45,7 +45,7 @@ namespace RoyTheunissen.URPBufferDebugging
                     originalLabelWidth = EditorGUIUtility.labelWidth;
                 },
                 
-                keywords = new HashSet<string>(new[] { "Deferred", "GBuffer", "Buffer", "Debugging", "Graphics", "Draw Modes" })
+                keywords = new HashSet<string>(new[] { "Deferred", "GBuffer", "Buffer", "Debugging", "Graphics", "Draw Modes", "Debug", "Debug Draw Modes" })
             };
 
             return provider;

@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
-namespace RoyTheunissen.URPBufferDebugging
+namespace RoyTheunissen.URPDebugDrawModes
 {
     public sealed class ShowGbufferRendererFeature : ScriptableRendererFeature
     {
