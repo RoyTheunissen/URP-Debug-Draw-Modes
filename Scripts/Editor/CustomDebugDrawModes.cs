@@ -26,7 +26,10 @@ namespace RoyTheunissen.URPDebugDrawModes
                 return;
             }
 
-            EditorApplication.delayCall += InitializeAfterDelay;
+            // HACK: Wait a few frames, for some reason the config tends to not be loaded correctly on first time
+            // installs. This is a possible fix.
+            EditorApplication.delayCall += () =>
+                EditorApplication.delayCall += EditorApplication.delayCall += InitializeAfterDelay;
         }
 
         private static void InitializeAfterDelay()
