@@ -20,7 +20,10 @@ namespace RoyTheunissen.URPDebugDrawModes
             set
             {
                 if (ActiveCategories != value)
+                {
                     EditorPrefs.SetInt(ActiveCategoriesEditorPref, (int)value);
+                    CustomDebugDrawModesConfig.Instance.RegisterDebugDrawModes();
+                }
             }
         }
 
