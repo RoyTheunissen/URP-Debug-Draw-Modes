@@ -1,7 +1,7 @@
 {
     "name": "com.roytheunissen.urp-debug-draw-modes",
     "displayName": "URP Debug Draw Modes",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "unity": "6000.0",
     "description": "Adds debug draw modes to let you see gbuffer contents in the scene view like you can in BRP.",
     "keywords": [
