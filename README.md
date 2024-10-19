@@ -64,6 +64,8 @@ All of my packages will now be available to you in the Package Manager in the 'M
 
 You can check out this repository as a submodule into your project's Packages folder. This is recommended if you intend to contribute to the repository yourself.
 
+_**NOTE**: If you do, it's best to name the folder `com.roytheunissen.urp-debug-draw-modes` to avoid a Unity warning about the folder name not matching the package name._
+
 ### OpenUPM
 The package is available on the [openupm registry](https://openupm.com). It's recommended to install it via [openupm-cli](https://github.com/openupm/openupm-cli).
 
