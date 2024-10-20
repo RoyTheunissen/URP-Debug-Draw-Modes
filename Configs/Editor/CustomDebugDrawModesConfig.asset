@@ -173,30 +173,30 @@ MonoBehaviour:
     showGbufferSettings:
       gbufferIndex: 3
       channels: 3
-  - name: 4.R (Optional #1)
+  - name: 4.RGB (Optional #1)
     category: 1
     type: 2
     shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
     rendererFeature: {fileID: 0}
     showGbufferSettings:
       gbufferIndex: 4
-      channels: 0
-  - name: 5.R (Optional #2)
+      channels: 4
+  - name: 5.RGB (Optional #2)
     category: 1
     type: 2
     shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
     rendererFeature: {fileID: 0}
     showGbufferSettings:
       gbufferIndex: 5
-      channels: 0
-  - name: 6.R (Optional #3)
+      channels: 4
+  - name: 6.RGB (Optional #3)
     category: 1
     type: 2
     shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
     rendererFeature: {fileID: 0}
     showGbufferSettings:
       gbufferIndex: 6
-      channels: 0
+      channels: 4
   - name: Albedo
     category: 2
     type: 2
@@ -237,4 +237,3 @@ MonoBehaviour:
     showGbufferSettings:
       gbufferIndex: 1
       channels: 0
-  activeCategories: -1
