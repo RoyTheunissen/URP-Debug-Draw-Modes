@@ -133,7 +133,7 @@ MonoBehaviour:
     showGbufferSettings:
       gbufferIndex: 2
       channels: 3
-  - name: 3.RGB (Lighting Buffer)
+  - name: 3.RGB (Custom GBuffer #0)
     category: 1
     type: 2
     shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
@@ -173,7 +173,7 @@ MonoBehaviour:
     showGbufferSettings:
       gbufferIndex: 3
       channels: 3
-  - name: 4.RGB (Optional #1)
+  - name: 4.RGB (Light Buffer)
     category: 1
     type: 2
     shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
@@ -181,7 +181,7 @@ MonoBehaviour:
     showGbufferSettings:
       gbufferIndex: 4
       channels: 4
-  - name: 5.RGB (Optional #2)
+  - name: 5.RGB (Optional #1)
     category: 1
     type: 2
     shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
@@ -189,13 +189,21 @@ MonoBehaviour:
     showGbufferSettings:
       gbufferIndex: 5
       channels: 4
-  - name: 6.RGB (Optional #3)
+  - name: 6.RGB (Optional #2)
     category: 1
     type: 2
     shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
     rendererFeature: {fileID: 0}
     showGbufferSettings:
       gbufferIndex: 6
+      channels: 4
+  - name: 7.RGB (Optional #3)
+    category: 1
+    type: 2
+    shader: {fileID: 4800000, guid: 2e16eb259ee88664a8f3bf097295ec9a, type: 3}
+    rendererFeature: {fileID: 0}
+    showGbufferSettings:
+      gbufferIndex: 7
       channels: 4
   - name: Albedo
     category: 2
